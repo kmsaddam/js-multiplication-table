@@ -12,18 +12,23 @@
     <script>
 
         var multiplication = parseInt(prompt("Enter your number: "));
-        var loopCount = parseInt(prompt("Enter Range:"));
+        var rangeCount = parseInt(prompt("Enter Range:"));
 
-        document.write(`Your Number: ${multiplication} <br />`);
-        document.write(`Loop Count: ${loopCount} <br />`);
-
-        for (var i = 1; i <= loopCount; i++) {
-            document.write(`${multiplication} * ${i}  = ${ multiplication*i } <br />`);
+        if(isNaN(multiplication) || isNaN(rangeCount)) {
+            document.write(`You have entered wrong input`);
+        } else {
+            // document.write(`Number Only`);
+            document.write(`Your Number: ${multiplication} <br />`);
+            document.write(`Your Range: ${rangeCount} <br />`);
+            document.write(`----------------------------<br />`);
+            for (var i = 1; i <= rangeCount; i++) {
+                document.write(`${multiplication} * ${i}  = ${ multiplication*i } <br />`);
+            }
+            
         }
+
         
-
-
-
+        
 
     </script>
 
