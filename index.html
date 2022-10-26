@@ -11,11 +11,11 @@
 
     <script>
 
-        var multiplication = 10;
-        var loopCount = 10;
+        var multiplication = parseInt(prompt("Enter your number: "));
+        var loopCount = parseInt(prompt("Enter Range:"));
 
-        document.write(`Your Number: 10 <br />`);
-        document.write(`Loop Count: 10 <br />`);
+        document.write(`Your Number: ${multiplication} <br />`);
+        document.write(`Loop Count: ${loopCount} <br />`);
 
         for (var i = 1; i <= loopCount; i++) {
             document.write(`${multiplication} * ${i}  = ${ multiplication*i } <br />`);
